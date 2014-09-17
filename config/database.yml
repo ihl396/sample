@@ -45,7 +45,8 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: sample_app_test
+  database: dbsa_test
+  host: localhost
   pool: 5
   username: sample_app
   password: password
@@ -53,7 +54,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: sample_app_production
+  database: dbsa_prod
+  host: localhost
   pool: 5
   username: sample_app
   password: password
