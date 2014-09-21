@@ -2,8 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.8'
 
+gem 'pg', '0.15.1'
+
 group :development, :test do
     gem 'rspec-rails', '2.13.1'
+    gem 'guard-rspec', '2.5.0'
 end
 
 group :test do
@@ -38,7 +41,6 @@ group :doc do
 end
 
 group :production do
-    gem 'pg', '0.15.1'
     gem 'rails_12factor', '0.0.2'
 end
 
